@@ -1,6 +1,6 @@
 let quotesData = [
     {
-        quote: "The difference between the almost-right word and the right word is the difference between the ligthning-bug and the lightning.",
+        quote: "The difference between the almost-right word and the right word is the difference between the lightning-bug and the lightning.",
         author: "Unknown"
     },
     {
@@ -96,7 +96,7 @@ let quotesData = [
         author: "Oscar Wilde"
     },
     {
-        quote: "Always forgive your enemies; nothng annoys them so much.",
+        quote: "Always forgive your enemies; nothing annoys them so much.",
         author: "Oscar Wilde"
     },
     {
@@ -162,7 +162,7 @@ let quotesData = [
         author: "George Harrison"
     },
     {
-        quote: "Give a man a fire and he's warm for a day, but set fire tohim and he's warm for the rest of his life.",
+        quote: "Give a man a fire and he's warm for a day, but set fire to him and he's warm for the rest of his life.",
         author: "Terry Pratchett"
     },
     {
@@ -226,7 +226,7 @@ let quotesData = [
         author: "Unknown"
     },
     {
-        quote: "Substitute 'damn' everytime you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be.",
+        quote: "Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be.",
         author: "Mark Twain"
     },
     {
@@ -238,7 +238,7 @@ let quotesData = [
         author: "Stephen King"
     },
     {
-        quote: "Life is a disease: sexually transmitted, and invarably fatal.",
+        quote: "Life is a disease: sexually transmitted, and invariably fatal.",
         author: "Neil Gaiman"
     },
     {
@@ -266,7 +266,7 @@ let quotesData = [
         author: "Chuck Palahniuk"
     },
     {
-        quote: "Truth is stranger than fiction, but it is becuase Fiction is obliged to stick to possibilities; Truth isn't.",
+        quote: "Truth is stranger than fiction, but it is because Fiction is obliged to stick to possibilities; Truth isn't.",
         author: "Mark Twain"
     },
     {
@@ -283,7 +283,7 @@ let quotesData = [
     },
     {
         quote: "'Begin at the beginning,' the King said, very gravely, 'and go on till you come to the end: then stop.'",
-        author: "Lewis Caroll"
+        author: "Lewis Carroll"
     },
     {
         quote: "I do not fear death. I had been dead for billions and billions of years before I was born, and had not suffered the slightest inconvenience from it.",
@@ -330,11 +330,11 @@ let quotesData = [
         author: "Henny Youngman"
     },
     {
-        quote: "Chrstopher Columbus, as everyone knows, is honored by posterity because he was the last to discover America",
+        quote: "Christopher Columbus, as everyone knows, is honored by posterity because he was the last to discover America",
         author: "James Joyce"
     },
     {
-        quote: "Procastination is the art of keeping up with yesterday.",
+        quote: "Procrastination is the art of keeping up with yesterday.",
         author: "Don Marquis"
     },
     {
@@ -482,7 +482,7 @@ let quotesData = [
         author: "Margaret Atwood"
     },
     {
-        quote: "Don't be troubled if the temptation to give advice is irresistable; the ability to ignore it is universal.",
+        quote: "Don't be troubled if the temptation to give advice is irresistible; the ability to ignore it is universal.",
         author: "Anon"
     },
     {
@@ -503,7 +503,7 @@ let quotesData = [
     },
     {
         quote: "There is no real ending. It's just the place where you stop the story.",
-        author: "Fank Herbert"
+        author: "Frank Herbert"
     },
     {
         quote: "After nourishment, shelter and companionship, stories are the thing we need most in the world.",
@@ -530,7 +530,7 @@ let quotesData = [
         author: "E.M. Forster"
     },
     {
-        quote: "A technicality I'm prpared to hide wildly behind.",
+        quote: "A technicality I'm prepared to hide wildly behind.",
         author: "Jim Butcher, <em>Storm Front</em>"
     }
 ];
