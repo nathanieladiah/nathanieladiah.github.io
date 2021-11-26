@@ -1,0 +1,246 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom properties */
+:root {
+    --clr-light: #fff;
+    --clr-dark: #333;
+    --clr-muted: rgba(255, 255, 255, .5);
+    --clr-hover: rgba(255, 255, 255, .25);
+    --clr-accent: #fc6a03;
+}
+
+
+
+/* Links */
+
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+    background-color: #fff;
+    border: 0.05rem solid #fff;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #333;
+}
+
+body {
+    display: flex;
+    color: #fff;
+    text-shadow: 0 0.05rem .1rem rgba(0, 0, 0, .5);
+
+}
+
+.cover-container {
+    max-width: 42em;
+}
+
+/* Header */
+
+.masthead {
+    margin-bottom: 2rem;
+}
+
+.masthead-brand {
+    margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: var(--clr-muted);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: var(--clr-hover);
+}
+
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: var(--clr-accent);
+    border-bottom-color: var(--clr-accent);
+}
+@media (min-width: 48rem) {
+    .masthead-brand {
+        float: left;
+    }
+
+    .nav-masthead {
+        float: right;
+    }
+}
+
+
+/* Cover */
+
+.cover {
+    padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+
+.about {
+    font-size: 1.5rem;
+}
+
+.typewriter {
+    width: 0ch;
+    color: white;
+    float: left;
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 7s steps(61) forwards;
+}
+
+.crow {
+    float: left;
+    color: var(--clr-accent);
+    font-family: monospace;
+    font-weight: bold;
+    animation: crow 1s step-end infinite;
+}
+
+@keyframes typing {
+    /*from { width: 0ch; }
+    to { width: 62ch; }
+    */
+    0%{ width: 0ch; }
+    100%{width: 61ch; }
+}
+
+@keyframes crow {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+
+/*
+.typewriter {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 5s steps(40, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* typing effect
+@keyframes typing {
+    from { width: 0ch }
+    to { width: 60% }
+}
+
+/* cursor effect
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+
+/* Footer */
+
+.mastfoot {
+    color: var(--clr-accent);
+    opacity: 0.5;
+}
+
+/* Quotes page */
+
+.quotebox .btn {
+    background: var(--clr-accent);
+    color: var(--clr-light);
+}
+
+.quotebox {
+    max-width: 60%;
+    color: var(--clr-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quotebox .fa-quote-left {
+    color: var(--clr-accent);
+}
+/* add media query to take off margins at smaller screens */
+
+.quote-body {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.quote-author {
+    align-self: flex-end;
+}
+
+.quote-buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Art Gallery */
+.album-cover p {
+    color: var(--clr-accent);
+    opacity: 0.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.gallery-item {
+    background: var(--clr-accent);
+    overflow: hidden;
+}
+
+.gallery-img {
+    transition:
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+    height: 400px;
+    width: 100%;
+}
+
+.gallery-img:hover,
+.gallery-item:focus .gallery-img {
+    transform: scale(1.2);
+    opacity: .85;
+}
