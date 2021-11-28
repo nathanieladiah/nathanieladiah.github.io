@@ -104,7 +104,7 @@ let quotesData = [
         author: "Oscar Wilde"
     },
     {
-        quote: "I am so clever that sometimes I don't understand a single word of what I am saying",
+        quote: "I am so clever that sometimes I don't understand a single word of what I am saying.",
         author: "Oscar Wilde"
     },
     {
@@ -434,7 +434,7 @@ let quotesData = [
         author: "Orson Scott Card (<em>Ender's Game</em>)"
     },
     {
-        quote: "Youth can not know how age thinks and feels. But old men are guilty if they forget what it was to be young.",
+        quote: "Youth cannot know how age thinks and feels. But old men are guilty if they forget what it was to be young.",
         author: "J.K. Rowling"
     },
     {
@@ -458,7 +458,7 @@ let quotesData = [
         author: "Neil Gaiman"
     },
     {
-        quote: "Anything worth dying for is certainly worth living for",
+        quote: "Anything worth dying for is certainly worth living for.",
         author: "Joseph Heller, <em>Catch 22</em>"
     },
     {
