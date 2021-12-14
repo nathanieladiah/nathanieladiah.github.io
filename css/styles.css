@@ -81,7 +81,8 @@ body {
     color: var(--clr-accent);
     border-bottom-color: var(--clr-accent);
 }
-@media (min-width: 48rem) {
+
+/* @media (min-width: 48rem) {
     .masthead-brand {
         float: left;
     }
@@ -89,7 +90,7 @@ body {
     .nav-masthead {
         float: right;
     }
-}
+} */
 
 
 /* Cover */
