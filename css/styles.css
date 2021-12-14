@@ -179,6 +179,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5%;
 }
 
 .quotebox .fa-quote-left {
@@ -204,6 +205,7 @@ body {
 @media only screen and (min-width: 768px) {
     .quotebox {
         max-width: 60%;
+        padding: 3rem;
     }
 
     .masthead {

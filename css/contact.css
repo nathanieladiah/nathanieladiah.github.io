@@ -69,6 +69,7 @@ form#contactForm :-ms-input-placeholder {
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  margin-top: 1rem;
   text-decoration: none;
 }
 .social-icons .social-icon:last-child {
