@@ -211,11 +211,6 @@ body {
     }
 }
 
-/* @media only screen and (max-width: 768px) {
-    header {
-        margin-bottom: 0;
-    }
-} */
 
 
 /* Art Gallery */
@@ -232,6 +227,7 @@ img {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .gallery-item {
