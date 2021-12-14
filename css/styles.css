@@ -205,7 +205,17 @@ body {
     .quotebox {
         max-width: 60%;
     }
+
+    .masthead {
+        margin-bottom: auto;
+    }
 }
+
+/* @media only screen and (max-width: 768px) {
+    header {
+        margin-bottom: 0;
+    }
+} */
 
 
 /* Art Gallery */
