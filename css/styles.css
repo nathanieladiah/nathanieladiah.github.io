@@ -98,23 +98,38 @@ body {
 .about {
     font-size: 1.5rem;
 }
-
+ 
 .typewriter {
-    width: 0ch;
-    color: white;
-    float: left;
-    font-family: monospace;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 7s steps(61) forwards;
+    margin-top: 1.5rem;
 }
 
-.crow {
-    float: left;
-    color: var(--clr-accent);
-    font-family: monospace;
-    font-weight: bold;
-    animation: crow 1s step-end infinite;
+.crow { display: none;}
+
+@media only screen and (min-width: 768px) {
+
+    .typewriter {
+        width: 0ch;
+        color: white;
+        float: left;
+        font-family: monospace;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 7s steps(61) forwards;
+    }
+
+    .typewriter br {
+        display: none;
+    }
+
+    .crow {
+        display: inline;
+        margin-top: 1.5rem;
+        float: left;
+        color: var(--clr-accent);
+        font-family: monospace;
+        font-weight: bold;
+        animation: crow 1s step-end infinite;
+    }
 }
 
 @keyframes typing {
