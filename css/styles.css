@@ -82,15 +82,6 @@ body {
     border-bottom-color: var(--clr-accent);
 }
 
-/* @media (min-width: 48rem) {
-    .masthead-brand {
-        float: left;
-    }
-
-    .nav-masthead {
-        float: right;
-    }
-} */
 
 
 /* Cover */
@@ -174,6 +165,8 @@ body {
     opacity: 0.5;
 }
 
+
+
 /* Quotes page */
 
 .quotebox .btn {
@@ -182,7 +175,6 @@ body {
 }
 
 .quotebox {
-    max-width: 60%;
     color: var(--clr-dark);
     display: flex;
     flex-direction: column;
@@ -192,7 +184,6 @@ body {
 .quotebox .fa-quote-left {
     color: var(--clr-accent);
 }
-/* add media query to take off margins at smaller screens */
 
 .quote-body {
     font-size: 1.75rem;
@@ -208,6 +199,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+    .quotebox {
+        max-width: 60%;
+    }
 }
 
 
