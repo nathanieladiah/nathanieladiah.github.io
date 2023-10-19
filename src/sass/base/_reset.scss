@@ -43,11 +43,11 @@ body {
   line-height: 1.5;
   min-height: 100vh;
 
-  display: flex;
+  // display: flex;
 
-  @include abs.breakpoint(xlarge) {
-    justify-content: center;
-  }
+  // @include abs.breakpoint(xlarge) {
+  //   justify-content: center;
+  // }
 
   // Using aic, causes the padding to not work on smaller screens
   // investigate further.
@@ -60,39 +60,39 @@ body {
   }
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  gap: abs.rem(22);
+// #root {
+//   display: flex;
+//   flex-direction: column;
+//   gap: abs.rem(22);
 
-  padding-block: 1.5rem;
-  padding-inline: 0.5rem;
+//   padding-block: 1.5rem;
+//   padding-inline: 0.5rem;
 
-  @include abs.breakpoint(medium) {
-    padding-inline: abs.rem(22);
-    padding-block: 2rem;
-  }
+//   @include abs.breakpoint(medium) {
+//     padding-inline: abs.rem(22);
+//     padding-block: 2rem;
+//   }
 
-  @include abs.breakpoint(xlarge) {
-    width: 75%;
-    max-width: 1300px;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    // grid-template-rows: repeat(6, min-content);
-    grid-template-rows: auto auto 2fr 3fr auto auto;
-    // grid-auto-rows: minmax(100px, auto);
-    grid-template-areas:
-      "intro      intro"
-      "skills     blog"
-      "hobbies    blog"
-      "hobbies    experience"
-      "projectBar projectBar"
-      "projects   projects";
-    column-gap: 2rem;
-    row-gap: 2rem;
-    justify-content: center;
-  }
-}
+//   @include abs.breakpoint(xlarge) {
+//     width: 75%;
+//     max-width: 1300px;
+//     display: grid;
+//     grid-template-columns: 2fr 3fr;
+//     // grid-template-rows: repeat(6, min-content);
+//     grid-template-rows: auto auto 2fr 3fr auto auto;
+//     // grid-auto-rows: minmax(100px, auto);
+//     grid-template-areas:
+//       "intro      intro"
+//       "skills     blog"
+//       "hobbies    blog"
+//       "hobbies    experience"
+//       "projectBar projectBar"
+//       "projects   projects";
+//     column-gap: 2rem;
+//     row-gap: 2rem;
+//     justify-content: center;
+//   }
+// }
 
 // Make images easier to work with
 
@@ -120,4 +120,8 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.accent {
+  color: var(--clr-accent);
 }

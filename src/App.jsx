@@ -1,4 +1,5 @@
+import Header from "./components/Header/Header";
 const App = () => {
-  return <div>Nathaniel Adiah</div>;
+  return <Header />;
 };
 export default App;
