@@ -125,3 +125,9 @@ select {
 .accent {
   color: var(--clr-accent);
 }
+
+.container {
+  @include abs.breakpoint(large) {
+    width: 85%;
+  }
+}

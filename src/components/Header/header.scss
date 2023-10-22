@@ -4,11 +4,17 @@ header {
   //   display: flex;
   //   justify-content: space-between;
   //   align-items: center;
+  background: url(../../assets/img/herobg.jpg) rgba(7, 7, 7, 0.8);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+
   @include abs.breakpoint(large) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: abs.rem(20);
+    // margin-top: abs.rem(20);
+    padding-top: abs.rem(20);
   }
 
   .container {
@@ -18,10 +24,6 @@ header {
 
     @include abs.breakpoint-down(medium) {
       display: block;
-    }
-
-    @include abs.breakpoint(medium) {
-      width: 85%;
     }
   }
 }

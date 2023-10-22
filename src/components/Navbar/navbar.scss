@@ -14,11 +14,13 @@
     font-size: abs.rem(34);
     flex-grow: 0;
 
-    margin-top: abs.rem(40);
+    // margin-top: abs.rem(40);
+    padding-top: abs.rem(40);
     margin-left: abs.rem(20);
 
     @include abs.breakpoint(large) {
       margin: 0;
+      padding: 0;
     }
   }
 

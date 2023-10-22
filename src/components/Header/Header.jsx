@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Hero from "../Hero/Hero";
 import Navbar from "../Navbar/Navbar";
 import "./header.scss";
 
@@ -26,6 +27,7 @@ const Header = () => {
         </button>
         <Navbar menuOpen={menuOpen} />
       </div>
+      <Hero />
     </header>
   );
 };
