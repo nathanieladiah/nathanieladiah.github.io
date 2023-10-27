@@ -131,3 +131,19 @@ select {
     width: 85%;
   }
 }
+
+.section__header {
+  font-size: abs.rem(14);
+  font-weight: medium;
+  color: var(--clr-section-header);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section__subheader {
+  font-size: abs.rem(32);
+  font-weight: medium;
+  color: var(--clr-light);
+  text-align: center;
+  margin-top: abs.rem(5);
+}

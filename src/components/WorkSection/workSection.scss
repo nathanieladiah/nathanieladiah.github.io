@@ -1,5 +1,22 @@
 @use "../../sass/abstracts/" as abs;
 
+.work.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: abs.rem(47);
+  padding-inline: abs.rem(20);
+
+  @include abs.breakpoint(medium) {
+    padding-inline: abs.rem(40);
+  }
+
+  // @include abs.breakpoint(large) {
+  //   margin-top: abs.rem(163);
+  // }
+}
+
 .work {
   background-color: var(--clr-bg-1);
 }
