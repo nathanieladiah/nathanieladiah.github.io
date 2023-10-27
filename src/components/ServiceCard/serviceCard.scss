@@ -1,0 +1,33 @@
+@use "../../sass/abstracts/" as abs;
+
+// .services {
+//   &__card {
+//     border: 1px solid var(--clr-accent);
+//     background-color: var(--clr-bg-card);
+//   }
+// }
+
+.card {
+  border: 1px solid var(--clr-accent);
+  background-color: var(--clr-bg-card);
+  color: var(--clr-light);
+  padding: abs.rem(20);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .icon {
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .number {
+      font-family: "Lato", sans-serif;
+      font-size: abs.rem(50);
+    }
+  }
+}
