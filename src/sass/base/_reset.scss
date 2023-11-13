@@ -129,6 +129,7 @@ select {
 .container {
   @include abs.breakpoint(large) {
     width: 85%;
+    max-width: abs.rem(1600);
   }
 }
 

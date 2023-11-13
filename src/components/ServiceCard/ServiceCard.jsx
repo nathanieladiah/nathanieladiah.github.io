@@ -1,21 +1,29 @@
-import { MdOutlineCode } from "react-icons/md";
+import PropTypes from "prop-types";
 import "./serviceCard.scss";
-const ServiceCard = () => {
+const ServiceCard = ({ icon, number, title, content, variant }) => {
   return (
-    <div className="card">
+    <div className={`card ${variant === "accent" ? "card--accent" : ""}`}>
       <div className="card__header">
-        <div className="icon">
-          <MdOutlineCode />
-        </div>
-        <div className="number">01</div>
+        <div className="icon">{icon}</div>
+        <div className="number">{number}</div>
       </div>
-      <h4 className="card__title">Web Development</h4>
-      <hr />
-      <p className="card__text">
-        I use my knowledge of various programming languages such as HTML5, CSS3,
-        JavaScript to build digital solutions for users.
-      </p>
+      <h4 className="card__title">{title}</h4>
+      <hr className={`${variant === "accent" ? "accent" : ""}`} />
+      <p className="card__text">{content}</p>
     </div>
   );
 };
+
+ServiceCard.defaultProps = {
+  variant: "default",
+};
+
+ServiceCard.propTypes = {
+  icon: PropTypes.node,
+  number: PropTypes.string,
+  title: PropTypes.string,
+  content: PropTypes.string,
+  variant: PropTypes.string,
+};
+
 export default ServiceCard;
