@@ -31,7 +31,7 @@ header {
 .mobile-nav-toggle {
   display: none;
 
-  @include abs.breakpoint-down(medium) {
+  @include abs.breakpoint-down(large) {
     display: block;
     position: absolute;
     right: abs.rem(40);
