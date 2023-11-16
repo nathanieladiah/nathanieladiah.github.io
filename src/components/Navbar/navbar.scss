@@ -88,10 +88,11 @@
 
     &--cta {
       color: var(--clr-dark);
-      font-family: var(--ff-serif);
+      font-family: var(--ff-sans);
       background-color: var(--clr-accent);
-      padding: abs.rem(14) abs.rem(32);
+      padding: abs.rem(16) abs.rem(24);
       font-size: abs.rem(18);
+      border-radius: 8px;
 
       &:hover,
       &:focus {

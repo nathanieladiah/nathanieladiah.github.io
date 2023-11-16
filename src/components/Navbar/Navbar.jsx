@@ -36,6 +36,13 @@ const Navbar = ({ menuOpen }) => {
           >
             View Resume
           </a>
+          {/* <Button
+            link={"#!"}
+            variant={"icon"}
+            icon={<MdOutlineBusinessCenter />}
+          >
+            View Resume
+          </Button> */}
         </li>
       </ul>
     </nav>
