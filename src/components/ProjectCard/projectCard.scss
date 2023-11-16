@@ -1,0 +1,80 @@
+@use "../../sass/abstracts/" as abs;
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+
+  @include abs.breakpoint(medium) {
+    flex-direction: row;
+    gap: abs.rem(28);
+  }
+
+  @include abs.breakpoint(xlarge) {
+    flex-direction: column;
+    gap: abs.rem(32);
+  }
+
+  .img-container {
+    padding: abs.rem(32) abs.rem(32);
+    background-color: var(--clr-bg-card);
+    border-radius: abs.rem(11);
+    border: 1px solid var(--clr-accent);
+    height: 408px;
+    // width: 393px;
+
+    @include abs.breakpoint(medium) {
+      width: 50%;
+      //   aspect-ratio: 296 / 393;
+      height: auto;
+      aspect-ratio: 393 / 296;
+    }
+
+    @include abs.breakpoint(xlarge) {
+      width: 100%;
+    }
+
+    img {
+      border-radius: 8px;
+      // height: 328px;
+      // width: 328px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    // gap: abs.rem(48);
+
+    // @include abs.breakpoint(medium) {
+    //   gap: abs.rem(48);
+    // }
+  }
+
+  .project-title {
+    font-family: var(--ff-sans);
+    font-weight: medium;
+    font-size: abs.rem(21);
+    margin-top: abs.rem(32);
+
+    @include abs.breakpoint(medium) {
+      margin-top: 0;
+    }
+  }
+
+  .project-description {
+    margin-top: abs.rem(8);
+    font-size: abs.rem(14);
+    font-weight: normal;
+
+    @include abs.breakpoint(medium) {
+      margin-top: abs.rem(48);
+    }
+
+    @include abs.breakpoint(xlarge) {
+      margin-top: 0;
+    }
+  }
+}

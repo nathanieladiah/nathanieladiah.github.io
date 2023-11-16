@@ -40,3 +40,36 @@
     gap: abs.rem(47);
   }
 }
+
+.section--portfolio {
+  margin-top: abs.rem(68);
+
+  .section__subheader {
+    margin-bottom: abs.rem(36);
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: abs.rem(32);
+  margin-bottom: abs.rem(42);
+
+  @include abs.breakpoint(medium) {
+    margin-bottom: abs.rem(32);
+  }
+
+  @include abs.breakpoint(xlarge) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: abs.rem(30);
+    row-gap: abs.rem(80);
+    margin-bottom: abs.rem(70);
+  }
+
+  .project-card:nth-last-child(-n + 3) {
+    @include abs.breakpoint-down(large) {
+      display: none;
+    }
+  }
+}

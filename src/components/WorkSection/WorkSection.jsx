@@ -1,6 +1,8 @@
 import { FaWandMagicSparkles } from "react-icons/fa6";
 import { GiPencilBrush } from "react-icons/gi";
 import { MdOutlineCode } from "react-icons/md";
+import bgImage from "../../assets/img/herobg.jpg";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import ServiceCard from "../ServiceCard/ServiceCard";
 import "./workSection.scss";
 
@@ -14,9 +16,6 @@ const WorkSection = () => {
             What <span className="accent">I do</span>.
           </h3>
           <div className="services">
-            {/* <div className="services__card services__card--highlight"></div>
-          <div className="services__card"></div>
-          <div className="services__card"></div> */}
             <ServiceCard
               icon={<MdOutlineCode />}
               number={"01"}
@@ -41,6 +40,46 @@ const WorkSection = () => {
               content={
                 "Weaving impactful narratives and delivering engaging content that resonates with readers. Skillfully combining creativity with research to create compelling pieces."
               }
+            />
+          </div>
+        </div>
+        <div className="section section--portfolio">
+          <h2 className="section__header">Portfolio</h2>
+          <h3 className="section__subheader">
+            Featured <span className="accent">projects</span>.
+          </h3>
+          <div className="projects">
+            <ProjectCard
+              image={bgImage}
+              title={"Project 01"}
+              description={"This is a project description for a project"}
+            />
+
+            <ProjectCard
+              image={bgImage}
+              title={"Project 02"}
+              description={"This is a project description for a project."}
+            />
+            <ProjectCard
+              image={bgImage}
+              title={"Project 03"}
+              description={"This is a project description for a project."}
+            />
+            <ProjectCard
+              image={bgImage}
+              title={"Project 03"}
+              description={"This is a project description for a project."}
+            />
+            <ProjectCard
+              image={bgImage}
+              title={"Project 03"}
+              description={"This is a project description for a project."}
+            />
+
+            <ProjectCard
+              image={bgImage}
+              title={"Project 03"}
+              description={"This is a project description for a project."}
             />
           </div>
         </div>
