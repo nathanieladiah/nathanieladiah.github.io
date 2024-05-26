@@ -95,6 +95,7 @@
 
 .section--skills {
   margin-top: abs.rem(43);
+  margin-bottom: abs.rem(80);
 
   display: flex;
   flex-direction: column;
@@ -148,48 +149,6 @@
       margin-bottom: 0;
     }
   }
-
-  // .skills-list {
-  //   display: grid;
-  //   grid-template-areas:
-  //     "html js js"
-  //     "react react css"
-  //     "md dj dj"
-  //     "node node node";
-  //   .skill {
-  //     text-transform: uppercase;
-  //     background-color: var(--clr-bg-card);
-  //     border: 1px solid var(--clr-accent);
-
-  //     &--html5 {
-  //       grid-area: html;
-  //     }
-
-  //     &--js {
-  //       grid-area: js;
-  //     }
-
-  //     &--react {
-  //       grid-area: react;
-  //     }
-
-  //     &--css {
-  //       grid-area: css;
-  //     }
-
-  //     &--md {
-  //       grid-area: md;
-  //     }
-
-  //     &--django {
-  //       grid-area: dj;
-  //     }
-
-  //     &--node {
-  //       grid-area: node;
-  //     }
-  //   }
-  // }
 
   .skills-list {
     // background-color: antiquewhite;
