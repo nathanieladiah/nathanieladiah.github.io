@@ -148,3 +148,36 @@ select {
   text-align: center;
   margin-top: abs.rem(5);
 }
+
+.button {
+  position: relative;
+  color: var(--clr-dark);
+  font-family: var(--ff-sans);
+  background-color: var(--clr-accent);
+  border-radius: 6px;
+  padding: abs.rem(16) abs.rem(24);
+  padding-right: abs.rem(56);
+  font-size: abs.rem(20);
+  text-decoration: none;
+
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 0.5rem;
+
+  span {
+    // font-size: abs.rem(20);
+    // width: abs.rem(20);
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    svg {
+      height: abs.rem(24);
+      width: abs.rem(24);
+      margin-left: 0.5rem;
+    }
+  }
+  //  change to roboto?
+  // &--icon {
+
+  // }
+}
