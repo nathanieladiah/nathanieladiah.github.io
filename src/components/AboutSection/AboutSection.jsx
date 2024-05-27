@@ -1,10 +1,37 @@
 import { MdOutlineBusinessCenter } from "react-icons/md";
 import headshot from "../../assets/img/headshot.jpg";
+import desktopImage from "../../assets/img/skills_desktop.png";
+import mobileImage from "../../assets/img/skills_mobile.png";
+import tabletImage from "../../assets/img/skills_tablet.png";
 import Button from "../common/Button/Button";
 
+import { useEffect, useState } from "react";
 import "./aboutSection.scss";
 
 const AboutSection = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const skillImageStyles = {
+    backgroundImage:
+      width < 700
+        ? `url(${mobileImage})`
+        : width < 1440
+        ? `url(${tabletImage})`
+        : `url(${desktopImage})`,
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section className="about">
       <div className="container">
@@ -66,7 +93,7 @@ const AboutSection = () => {
               follows best practices and standards.
             </p>
           </div>
-          <div className="skills-list"></div>
+          <div className="skills-list" style={skillImageStyles}></div>
         </div>
       </div>
     </section>

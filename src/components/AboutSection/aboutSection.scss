@@ -153,28 +153,21 @@
   }
 
   .skills-list {
-    // background-color: antiquewhite;
-    background-image: url("src/assets/img/skills_mobile.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    // height: 527px;
-    // 523x629
     aspect-ratio: 523 / 629;
     margin-bottom: abs.rem(112);
 
     @include abs.breakpoint(medium) {
-      background-image: url("src/assets/img/skills_tablet.png");
       aspect-ratio: 1030 / 674;
     }
 
     @include abs.breakpoint(xlarge) {
-      background-image: url("src/assets/img/skills_desktop.png");
       aspect-ratio: 936 / 670;
       grid-area: skills-image;
       width: auto;
-      // place-self: center center;
       margin-bottom: 0;
     }
   }
