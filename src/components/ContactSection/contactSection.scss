@@ -1,0 +1,168 @@
+@use "../../sass/abstracts/" as abs;
+
+.contact {
+  background-color: var(--clr-bg-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include abs.breakpoint(xlarge) {
+    padding: abs.rem(65) abs.rem(100) abs.rem(230);
+  }
+
+  &-content {
+    margin-top: abs.rem(24);
+    text-align: center;
+    font-family: var(--ff-sans);
+    font-size: abs.rem(26);
+    font-weight: 400;
+
+    max-width: 810px;
+
+    @include abs.breakpoint(xlarge) {
+      margin-top: abs.rem(32);
+    }
+  }
+
+  &-form {
+    margin-top: abs.rem(48);
+    width: 100%;
+
+    background-color: var(--clr-bg-2);
+    padding: abs.rem(40) abs.rem(23) abs.rem(34) abs.rem(23);
+    border-radius: 9px;
+
+    display: flex;
+    flex-direction: column;
+    gap: abs.rem(41);
+
+    @include abs.breakpoint(medium) {
+      padding: abs.rem(40);
+    }
+
+    @include abs.breakpoint(xlarge) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: abs.rem(62) abs.rem(56) abs.rem(57);
+    }
+
+    &__intro {
+      display: flex;
+      flex-direction: column;
+      gap: abs.rem(14);
+
+      @include abs.breakpoint(medium) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      @include abs.breakpoint(xlarge) {
+        flex-direction: column;
+        justify-content: start;
+        gap: abs.rem(60);
+      }
+
+      .title {
+        font-size: abs.rem(23);
+        font-weight: medium;
+        text-align: center;
+
+        @include abs.breakpoint(medium) {
+          text-align: left;
+        }
+
+        .accent {
+          font-weight: 400;
+        }
+      }
+
+      .contact-details {
+        .info {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          justify-content: center;
+
+          @include abs.breakpoint(medium) {
+            text-align: left;
+            justify-content: start;
+            margin-bottom: 1rem;
+          }
+
+          span {
+            font-size: abs.rem(18);
+          }
+          svg {
+            fill: var(--clr-accent);
+          }
+        }
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: abs.rem(27);
+
+      @include abs.breakpoint(xlarge) {
+        width: 50%;
+      }
+
+      .form-control {
+        display: flex;
+        flex-direction: column;
+        gap: abs.rem(9);
+
+        label {
+          font-size: abs.rem(16);
+          font-family: var(--ff-sans);
+          color: #ffffff;
+        }
+
+        input {
+          background-color: transparent;
+          border: 1px solid var(--clr-section-header);
+          border-radius: 15px;
+          padding: abs.rem(22) abs.rem(12);
+          color: #ffffff;
+
+          ::placeholder {
+            font-size: 1rem;
+            font-family: var(--ff-sans);
+          }
+        }
+
+        textarea {
+          background-color: transparent;
+          color: #ffffff;
+          font-size: abs.rem(18);
+          border: 1px solid var(--clr-section-header);
+          border-radius: 15px;
+          padding: abs.rem(22) abs.rem(12);
+        }
+      }
+
+      button {
+        background-color: var(--clr-accent);
+        border: none;
+        border-radius: 7px;
+        width: fit-content;
+        padding: abs.rem(13) abs.rem(15);
+      }
+    }
+  }
+
+  .container {
+    padding: abs.rem(30) abs.rem(20) abs.rem(40) abs.rem(20);
+
+    @include abs.breakpoint(xlarge) {
+      padding: 0;
+    }
+
+    .section--contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
