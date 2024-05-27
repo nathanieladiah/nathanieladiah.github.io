@@ -95,7 +95,6 @@
 
 .section--skills {
   margin-top: abs.rem(43);
-  margin-bottom: abs.rem(80);
 
   display: flex;
   flex-direction: column;
@@ -122,6 +121,8 @@
         text-align: left;
         margin-bottom: 0;
       }
+
+      align-self: flex-end;
     }
   }
 
@@ -145,8 +146,9 @@
 
     @include abs.breakpoint(xlarge) {
       text-align: justify;
-      margin-top: 0;
+      margin-top: abs.rem(24);
       margin-bottom: 0;
+      align-self: flex-start;
     }
   }
 

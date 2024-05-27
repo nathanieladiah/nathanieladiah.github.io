@@ -66,16 +66,6 @@ const AboutSection = () => {
               follows best practices and standards.
             </p>
           </div>
-          {/* <div className="skills-list">
-            <div className="skill skill--html5">Html5</div>
-            <div className="skill skill--js">javascript</div>
-            <div className="skill skill--react">react</div>
-            <div className="skill skill--css">css</div>
-            <div className="skill skill--md">mongodb</div>
-            <div className="skill skill--django">django</div>
-            <div className="skill skill--node">node.js</div>
-          </div> */}
-          {/* Use an image for the skills list instead */}
           <div className="skills-list"></div>
         </div>
       </div>
