@@ -1,8 +1,8 @@
 import { MdOutlineBusinessCenter } from "react-icons/md";
 import headshot from "../../assets/img/headshot.jpg";
-import desktopImage from "../../assets/img/skills_desktop.png";
-import mobileImage from "../../assets/img/skills_mobile.png";
-import tabletImage from "../../assets/img/skills_tablet.png";
+import desktopImage from "../../assets/img/skills/skills_desktop.png";
+import mobileImage from "../../assets/img/skills/skills_mobile.png";
+import tabletImage from "../../assets/img/skills/skills_tablet.png";
 import Button from "../common/Button/Button";
 
 import { useEffect, useState } from "react";
