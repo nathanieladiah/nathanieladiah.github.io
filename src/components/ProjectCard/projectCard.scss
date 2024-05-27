@@ -27,6 +27,7 @@
       //   aspect-ratio: 296 / 393;
       height: auto;
       aspect-ratio: 393 / 296;
+      // aspect-ratio: 1920 / 1080;
     }
 
     @include abs.breakpoint(xlarge) {

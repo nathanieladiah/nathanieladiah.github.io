@@ -1,12 +1,23 @@
 import { FaWandMagicSparkles } from "react-icons/fa6";
 import { GiPencilBrush } from "react-icons/gi";
 import { MdOutlineCode } from "react-icons/md";
-import bgImage from "../../assets/img/herobg.jpg";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import ServiceCard from "../ServiceCard/ServiceCard";
+import projects from "./portfolio.js";
 import "./workSection.scss";
 
 const WorkSection = () => {
+  console.log(projects);
+
+  const projectCards = projects.map((project) => (
+    <ProjectCard
+      key={project.title}
+      image={project.image}
+      title={project.title}
+      description={project.description}
+    />
+  ));
+
   return (
     <section className="work">
       <div className="container">
@@ -48,40 +59,7 @@ const WorkSection = () => {
           <h3 className="section__subheader">
             Featured <span className="accent">projects</span>.
           </h3>
-          <div className="projects">
-            <ProjectCard
-              image={bgImage}
-              title={"Project 01"}
-              description={"This is a project description for a project"}
-            />
-
-            <ProjectCard
-              image={bgImage}
-              title={"Project 02"}
-              description={"This is a project description for a project."}
-            />
-            <ProjectCard
-              image={bgImage}
-              title={"Project 03"}
-              description={"This is a project description for a project."}
-            />
-            <ProjectCard
-              image={bgImage}
-              title={"Project 03"}
-              description={"This is a project description for a project."}
-            />
-            <ProjectCard
-              image={bgImage}
-              title={"Project 03"}
-              description={"This is a project description for a project."}
-            />
-
-            <ProjectCard
-              image={bgImage}
-              title={"Project 03"}
-              description={"This is a project description for a project."}
-            />
-          </div>
+          <div className="projects">{projectCards}</div>
         </div>
       </div>
     </section>
