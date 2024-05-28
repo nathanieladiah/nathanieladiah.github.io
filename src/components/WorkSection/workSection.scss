@@ -34,6 +34,7 @@
   display: flex;
   flex-direction: column;
   gap: abs.rem(32);
+  margin-top: abs.rem(36);
 
   @include abs.breakpoint(xlarge) {
     flex-direction: row;
