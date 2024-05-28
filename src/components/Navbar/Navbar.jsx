@@ -30,7 +30,9 @@ const Navbar = ({ menuOpen }) => {
         </li>
         <li className="navbar__item">
           <a
-            href="#"
+            href="resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             id="cta-desktop"
             className="navbar__link navbar__link--cta"
           >

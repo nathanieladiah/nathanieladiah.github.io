@@ -65,7 +65,7 @@ const AboutSection = () => {
             </p>
 
             <Button
-              link={"#"}
+              link={"resume.pdf"}
               variant={"icon"}
               icon={<MdOutlineBusinessCenter />}
             >

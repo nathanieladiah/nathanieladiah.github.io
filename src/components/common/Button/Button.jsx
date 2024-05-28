@@ -7,6 +7,8 @@ const Button = ({ link, variant, icon, children }) => {
     <a
       className={`button ${variant === "icon" ? "button--icon" : ""}`}
       href={link}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {children}
       {variant === "icon" && <span>{icon}</span>}
