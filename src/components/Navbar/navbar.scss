@@ -60,6 +60,14 @@
   }
 
   &__item {
+    @include abs.breakpoint(xlarge) {
+      transition: transform 500ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
     &--cta {
       @include abs.breakpoint-down(large) {
         margin-top: 2.5rem;
@@ -72,18 +80,16 @@
 
     color: var(--clr-white);
     font-family: var(--ff-sans);
-    // font-size:;
-    // font-weight: 400;
-    transition: transform 500ms ease-in-out;
 
-    &--active {
-      color: var(--clr-accent);
-    }
+    // &--active {
+    //   color: var(--clr-accent);
+    // }
 
-    &:hover,
-    &:focus {
-      color: var(--clr-accent);
-      transform: scale(1.05);
+    @include abs.breakpoint(xlarge) {
+      &:hover,
+      &:focus {
+        color: var(--clr-accent);
+      }
     }
 
     &--cta {
@@ -94,10 +100,12 @@
       font-size: abs.rem(18);
       border-radius: 8px;
 
-      &:hover,
-      &:focus {
-        transform: scale(1.05);
-        color: var(--clr-dark);
+      @include abs.breakpoint(xlarge) {
+        &:hover,
+        &:focus {
+          transform: scale(1.05);
+          color: var(--clr-dark);
+        }
       }
     }
   }

@@ -10,6 +10,11 @@
   padding-right: abs.rem(56);
   font-size: abs.rem(20);
   text-decoration: none;
+  transition: transform 500ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   //   display: flex;
   //   align-items: center;

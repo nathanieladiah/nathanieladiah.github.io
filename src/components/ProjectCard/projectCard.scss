@@ -34,6 +34,14 @@
 
     @include abs.breakpoint(xlarge) {
       width: 100%;
+
+      // do the transitions
+      transition: all 500ms ease-in-out;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
     }
 
     img {

@@ -74,11 +74,13 @@
         width: 46px;
         height: 46px;
         color: var(--clr-light);
+        transition: transform 500ms ease-in-out;
       }
       &:hover,
       &:focus {
         svg {
           color: var(--clr-accent);
+          transform: scale(1.05);
         }
       }
     }
