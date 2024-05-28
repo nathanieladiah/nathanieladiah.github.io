@@ -67,9 +67,9 @@
     margin-bottom: abs.rem(70);
   }
 
-  // .project-card:nth-last-child(-n + 3) {
-  //   @include abs.breakpoint-down(large) {
-  //     display: none;
-  //   }
-  // }
+  .project-card:nth-last-child(-n + 3) {
+    @include abs.breakpoint-down(large) {
+      display: none;
+    }
+  }
 }

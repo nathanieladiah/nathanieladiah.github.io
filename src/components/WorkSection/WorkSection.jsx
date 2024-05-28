@@ -4,32 +4,27 @@ import { GiPencilBrush } from "react-icons/gi";
 import { MdOutlineCode } from "react-icons/md";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import ServiceCard from "../ServiceCard/ServiceCard";
-import mobileProjects from "./mobile.js";
-import projects from "./portfolio.js";
+import projects from "./portfolio";
 import "./workSection.scss";
 
 const WorkSection = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  const [projectList, setProjectList] = useState(mobileProjects);
-
   useEffect(() => {
     const handleResize = () => {
       setWidth(window.innerWidth);
-
-      if (width < 700) {
-        setProjectList(mobileProjects);
-      } else {
-        setProjectList(projects);
-      }
     };
 
     window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, [width]);
 
-  const projectCards = projectList.map((project) => (
+  const projectCards = projects.map((project) => (
     <ProjectCard
       key={project.title}
-      image={project.image}
+      image={width < 700 ? project.mobileImage : project.image}
       title={project.title}
       description={project.description}
     />
