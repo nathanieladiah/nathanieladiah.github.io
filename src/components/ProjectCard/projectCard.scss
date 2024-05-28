@@ -21,13 +21,13 @@
     border: 1px solid var(--clr-accent);
     height: 408px;
     // width: 393px;
+    // 306 * 342
 
     @include abs.breakpoint(medium) {
       width: 50%;
-      //   aspect-ratio: 296 / 393;
+      min-width: 50%;
       height: auto;
-      aspect-ratio: 393 / 296;
-      // aspect-ratio: 1920 / 1080;
+      aspect-ratio: 4 / 3;
     }
 
     @include abs.breakpoint(xlarge) {
@@ -36,8 +36,6 @@
 
     img {
       border-radius: 8px;
-      // height: 328px;
-      // width: 328px;
       height: 100%;
       width: 100%;
       object-fit: cover;
@@ -47,11 +45,6 @@
   .project-info {
     display: flex;
     flex-direction: column;
-    // gap: abs.rem(48);
-
-    // @include abs.breakpoint(medium) {
-    //   gap: abs.rem(48);
-    // }
   }
 
   .project-title {
@@ -61,7 +54,7 @@
     margin-top: abs.rem(32);
 
     @include abs.breakpoint(medium) {
-      margin-top: 0;
+      margin-top: abs.rem(16);
     }
   }
 
@@ -72,10 +65,6 @@
 
     @include abs.breakpoint(medium) {
       margin-top: abs.rem(48);
-    }
-
-    @include abs.breakpoint(xlarge) {
-      margin-top: 0;
     }
   }
 }
