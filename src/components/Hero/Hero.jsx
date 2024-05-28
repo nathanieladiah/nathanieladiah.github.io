@@ -13,15 +13,27 @@ const Hero = () => {
         browser.
       </p>
       <div className="hero__socials">
-        <a href="#">
+        <a
+          href="https://github.com/nathanieladiah"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
           <span className="sr-only">Github</span>
         </a>
-        <a href="#">
+        <a
+          href="https://www.linkedin.com/in/nathaniel-adiah-361a71223/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin />
           <span className="sr-only">LinkedIn</span>
         </a>
-        <a href="#">
+        <a
+          href="https://twitter.com/nathanieladiah"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaTwitter />
           <span className="sr-only">Twitter</span>
         </a>

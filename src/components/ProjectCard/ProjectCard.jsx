@@ -1,9 +1,14 @@
 import PropTypes from "prop-types";
 import "./projectCard.scss";
 
-const ProjectCard = ({ image, title, description }) => {
+const ProjectCard = ({ image, title, description, liveLink, githubLink }) => {
   return (
-    <div className="project-card">
+    <a
+      className="project-card"
+      href={githubLink ? githubLink : liveLink}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div className="img-container">
         <img src={image} alt="" />
       </div>
@@ -11,7 +16,7 @@ const ProjectCard = ({ image, title, description }) => {
         <h4 className="project-title">{title}</h4>
         <p className="project-description">{description}</p>
       </div>
-    </div>
+    </a>
   );
 };
 
@@ -19,6 +24,8 @@ ProjectCard.propTypes = {
   image: PropTypes.string,
   description: PropTypes.string,
   title: PropTypes.string,
+  liveLink: PropTypes.string,
+  githubLink: PropTypes.string,
 };
 
 export default ProjectCard;

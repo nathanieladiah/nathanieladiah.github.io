@@ -27,6 +27,8 @@ const WorkSection = () => {
       image={width < 700 ? project.mobileImage : project.image}
       title={project.title}
       description={project.description}
+      liveLink={project.liveLink}
+      githubLink={project.githubLink}
     />
   ));
 
@@ -66,7 +68,7 @@ const WorkSection = () => {
             />
           </div>
         </div>
-        <div className="section section--portfolio">
+        <div className="section section--portfolio" id="projects">
           <h2 className="section__header">Portfolio</h2>
           <h3 className="section__subheader">
             Featured <span className="accent">projects</span>.

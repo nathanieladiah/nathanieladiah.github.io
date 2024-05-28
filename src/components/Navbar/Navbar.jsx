@@ -14,17 +14,17 @@ const Navbar = ({ menuOpen }) => {
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#" className="navbar__link">
+          <a href="#projects" className="navbar__link">
             Featured Projects
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#" className="navbar__link">
+          <a href="#about" className="navbar__link">
             About me
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#" className="navbar__link">
+          <a href="#contact" className="navbar__link">
             Contact me
           </a>
         </li>

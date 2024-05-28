@@ -3,7 +3,7 @@ import { MdEmail, MdLocalPhone } from "react-icons/md";
 import "./contactSection.scss";
 const ContactSection = () => {
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className="container">
         <div className="section section--contact">
           <div className="headings">

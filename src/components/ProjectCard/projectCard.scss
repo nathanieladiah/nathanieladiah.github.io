@@ -3,6 +3,8 @@
 .project-card {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: inherit;
 
   @include abs.breakpoint(medium) {
     flex-direction: row;

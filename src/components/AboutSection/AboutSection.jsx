@@ -33,7 +33,7 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="container">
         <div className="section section--bio">
           <div className="headers">
