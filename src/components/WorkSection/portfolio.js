@@ -15,32 +15,36 @@ const projects = [
     image: blog,
     mobileImage: blogMobile,
     title: "Blogging Webapp",
-    description: "A web application I developed to host multiple blogs.",
+    description:
+      "A web application I developed to host multiple blogs. I used Django and Bootstrap to develop this.",
   },
   {
     image: space,
     mobileImage: spaceMobile,
     title: "Space Tourism Website",
     description:
-      "Solution for a space tourism website frontend mentor challenge.",
+      "Solution for a space tourism website frontend mentor challenge. Built with SASS, this was an exercise in responsive layouts.",
   },
   {
     image: markdown,
     mobileImage: markdownMobile,
     title: "Markdown Editor",
-    description: "A simple markdown editor and previewer webapp.",
+    description:
+      "A simple markdown editor and previewer webapp. A personal project I'm developing using React.",
   },
   {
     image: intro,
     mobileImage: introMobile,
     title: "Intro Section",
-    description: "Solution for an intro section frontend mentor challenge.",
+    description:
+      "Solution for an intro section frontend mentor challenge. I'm pretty proud of the mobile menu transaction on this one.",
   },
   {
     image: interior,
     mobileImage: interiorMobile,
     title: "Modern Interior",
-    description: "Frontend homepage design challenge from dev-challenges.io",
+    description:
+      "Frontend homepage design challenge from dev-challenges.io for an interior design company. I'm also proud of the mobile menu.",
   },
   {
     image: agri,
