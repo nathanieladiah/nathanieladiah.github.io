@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import "./navbar.scss";
+
 const Navbar = ({ menuOpen }) => {
   return (
     <nav className="navbar">
