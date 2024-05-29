@@ -21,6 +21,15 @@ const projects = [
     githubLink: "https://github.com/nathanieladiah/blogs",
   },
   {
+    image: intro,
+    mobileImage: introMobile,
+    title: "Intro Section",
+    description:
+      "Solution for an intro section frontend mentor challenge. I'm pretty proud of the mobile menu transaction on this one.",
+    liveLink: "https://adiah-frontend-mentor.github.io/intro-section/",
+    githubLink: "https://github.com/adiah-frontend-mentor/intro-section",
+  },
+  {
     image: space,
     mobileImage: spaceMobile,
     title: "Space Tourism Website",
@@ -37,15 +46,6 @@ const projects = [
       "A simple markdown editor and previewer webapp. A personal project I'm developing using React.",
     liveLink: null,
     githubLink: null,
-  },
-  {
-    image: intro,
-    mobileImage: introMobile,
-    title: "Intro Section",
-    description:
-      "Solution for an intro section frontend mentor challenge. I'm pretty proud of the mobile menu transaction on this one.",
-    liveLink: "https://adiah-frontend-mentor.github.io/intro-section/",
-    githubLink: "https://github.com/adiah-frontend-mentor/intro-section",
   },
   {
     image: interior,
