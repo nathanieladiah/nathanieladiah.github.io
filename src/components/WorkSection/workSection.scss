@@ -21,7 +21,7 @@
 
     @include abs.breakpoint(large) {
       padding-inline: 0;
-      padding-top: abs.rem(65);
+      padding-top: abs.rem(20);
     }
 
     // @include abs.breakpoint(large) {
