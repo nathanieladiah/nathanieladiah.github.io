@@ -148,6 +148,12 @@
         border-radius: 7px;
         width: fit-content;
         padding: abs.rem(13) abs.rem(15);
+        cursor: pointer;
+        transition: transform 300ms ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
   }

@@ -1,7 +1,46 @@
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { useState } from "react";
+import { toast } from "react-toastify";
+import { db } from "../../firebase.config";
 import "./contactSection.scss";
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const { name, email, message } = formData;
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    const formDataCopy = {
+      ...formData,
+      timestamp: serverTimestamp(),
+    };
+
+    // const docRef = await addDoc(collection(db, "messages"), formData);
+    await addDoc(collection(db, "messages"), formDataCopy);
+
+    toast.success("Message sent");
+
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
+  const onMutate = (e) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
   return (
     <section className="contact" id="contact">
       <div className="container">
@@ -35,7 +74,7 @@ const ContactSection = () => {
                 </div>
               </div>
             </div>
-            <form action="" className="contact-form__form">
+            <form className="contact-form__form" onSubmit={onSubmit}>
               <div className="form-control">
                 <label htmlFor="name">Full Name</label>
                 <input
@@ -43,6 +82,8 @@ const ContactSection = () => {
                   name="name"
                   id="name"
                   placeholder="Enter name"
+                  value={name}
+                  onChange={onMutate}
                 />
               </div>
               <div className="form-control">
@@ -52,6 +93,8 @@ const ContactSection = () => {
                   name="email"
                   id="email"
                   placeholder="Enter email"
+                  value={email}
+                  onChange={onMutate}
                 />
               </div>
               <div className="form-control">
@@ -61,6 +104,8 @@ const ContactSection = () => {
                   id="message"
                   placeholder="Enter messsage"
                   rows={4}
+                  value={message}
+                  onChange={onMutate}
                 ></textarea>
               </div>
               {/* <Button>Send Message</Button> */}
