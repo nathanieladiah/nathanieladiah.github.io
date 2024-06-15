@@ -82,6 +82,7 @@ const ContactSection = () => {
                   name="name"
                   id="name"
                   placeholder="Enter name"
+                  required
                   value={name}
                   onChange={onMutate}
                 />
@@ -95,6 +96,8 @@ const ContactSection = () => {
                   placeholder="Enter email"
                   value={email}
                   onChange={onMutate}
+                  required
+                  pattern=".+@.+\..+"
                 />
               </div>
               <div className="form-control">
@@ -106,6 +109,7 @@ const ContactSection = () => {
                   rows={4}
                   value={message}
                   onChange={onMutate}
+                  required
                 ></textarea>
               </div>
               {/* <Button>Send Message</Button> */}
