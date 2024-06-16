@@ -9,7 +9,7 @@ import image1 from "./images/image-1.png";
 import image2 from "./images/image-2.png";
 
 import { MdLockOutline, MdOutlinePerson } from "react-icons/md";
-import "./login.scss";
+// import "./login.scss";
 
 const Login = () => {
   // Time of day
