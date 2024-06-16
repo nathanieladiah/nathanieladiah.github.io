@@ -70,7 +70,7 @@ const Login = () => {
   }
 
   if (loggedIn) {
-    return <Navigate to="/" />;
+    return <Navigate to="/admin" />;
   }
 
   return (

@@ -4,8 +4,10 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import PrivateRoute from "./components/PrivateRoute";
-import Login from "./pages/login/Login";
+import Admin from "./pages/Admin/Admin";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import Login from "./pages/login/Login";
+import Messages from "./pages/messages/Messages";
 
 const App = () => {
   return (
@@ -13,18 +15,12 @@ const App = () => {
       <ToastContainer />
       <Router>
         <Routes>
-          <Route path="/" element={<Portfolio />} />
-          <Route path="/messages" element={<PrivateRoute />}>
-            <Route
-              path="/messages"
-              element={
-                <>
-                  <h1>Messages</h1>
-                </>
-              }
-            />
-          </Route>
+          <Route index element={<Portfolio />} />
           <Route path="/sign-in" element={<Login />} />
+          <Route element={<PrivateRoute />}>
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/messages" element={<Messages />} />
+          </Route>
         </Routes>
       </Router>
     </>
