@@ -46,7 +46,7 @@ const Login = () => {
       );
 
       if (userCredentials.user) {
-        navigate("/");
+        navigate("/admin");
       }
     } catch (error) {
       toast.error("Invalid User Credentials");
