@@ -2,6 +2,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useEffect, useRef, useState } from "react";
 import { Navigate, Outlet } from "react-router-dom";
 import { auth } from "../firebase.config";
+import Spinner from "./Spinner/Spinner";
 
 const PrivateRoute = () => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -25,7 +26,7 @@ const PrivateRoute = () => {
   }, [isMounted]);
 
   if (checkingStatus) {
-    return <div>Spinner</div>;
+    return <Spinner />;
   }
 
   return loggedIn ? <Outlet /> : <Navigate to="/sign-in" />;
